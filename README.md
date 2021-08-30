@@ -1,9 +1,12 @@
 
-#### **Higgs Boson**
+#### **Higgs Boson Decay Modes**
 
 #### **Problem Statement**
 
 - The task is to classify whether **signal or background**
+
+![logo](https://github.com/sureshmecad/Higgs-Boson-Decay-TMLC/blob/main/image/Higgs.JPG)
+
 
 |Variable          |Description         |
 |------------------|--------------------|
@@ -46,6 +49,9 @@
 
 
 #### **Deployment Link**
+https://higgsbosondecay.herokuapp.com/
+
+![logo](https://github.com/sureshmecad/Higgs-Boson-Decay-TMLC/blob/main/image/Deploy_Higgs.JPG)
 
 
 
