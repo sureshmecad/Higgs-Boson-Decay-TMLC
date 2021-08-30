@@ -1,5 +1,5 @@
 import joblib
-from sklearn.ensemble import RandomForestClassifier
+from lightgbm import LGBMClassifier
 import os
 import numpy as np
 
