@@ -1,8 +1,8 @@
 
-#### **Higgs Boson Classification**
+## **Higgs Boson Classification**
 
 
-#### **Problem Statement**
+### **Problem Statement**
 
 - The task is to classify whether **signal or background**
 
@@ -33,7 +33,7 @@ Considering the definitions of different columns, and physical symmetries (like 
 Preprocessing yielded classes with as little as 10 meaningful features. In order to expand the flexibility of the linear regression approach, I decided to multiply each column into a number of generated features by "Gaussian splits," defined by the overlap between a feature and a set of shifted Gaussians, in the spirit of kernel methods. Experiments showed that classifier improvement tapered off with 4- to 8-fold splits of each feature, so I settled on 8-fold splits for the competition.
 
 
-#### **Deployment Link**
+## **Deployment Link**
 https://higgsbosondecay.herokuapp.com/
 
 ![logo](https://github.com/sureshmecad/Higgs-Boson-Decay-TMLC/blob/main/image/Deploy_Higgs.JPG)
