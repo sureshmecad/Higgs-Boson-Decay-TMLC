@@ -20,6 +20,7 @@ with st.form("prediction_form"):
     DER_mass_transverse_met_lep = st.number_input("DER_mass_transverse_met_lep: ")
     DER_mass_vis = st.number_input("DER_mass_vis: ")
     DER_deltar_tau_lep = st.number_input("DER_deltar_tau_lep: ")
+    PRI_tau_pt = st.number_input("PRI_tau_pt: ")
     DER_met_phi_centrality = st.number_input("DER_met_phi_centrality:")
     DER_pt_h = st.number_input("DER_pt_h:")
     PRI_met = st.number_input("PRI_met:")
@@ -27,18 +28,8 @@ with st.form("prediction_form"):
 
 
 if submit_val:
-    per_d = dict(zip(feature_cols[0:11],np.zeros(10)))
-    for p in permission:
-        per_d[p] = 1
-    permission = np.array(list(per_d.values()))
-    cat = dict(zip(feature_cols[0:], np.zeros(10)))
-    cat[Category] = 1
-    Category = np.array(list(cat.values()))
+    attributes = np.array([DER_mass_MMC, DER_mass_transverse_met_lep, DER_mass_vis, DER_deltar_tau_lep, PRI_tau_pt, DER_met_phi_centrality, DER_pt_h, PRI_met])
 
-    base_feats = np.array([DER_mass_MMC, DER_mass_transverse_met_lep, DER_mass_vis, DER_deltar_tau_lep, DER_met_phi_centrality, DER_pt_h, PRI_met])
-
-    attributes = np.concatenate([base_feats, permission, Category])
-    
     print("attributes value")
 
     status = predict(attributes.reshape(1, -1))
